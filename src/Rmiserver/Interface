@@ -1,0 +1,12 @@
+package Rmiserver;
+
+public interface Interface {
+	public boolean addCourse(String courseID,String semester,int capacity);
+	public boolean removeCourse(String courseID,String semester);
+	public String  listCourseAvailability(String semester);
+	public boolean enrolCourse(String studentID, String courseID,String semester);
+	public String  getClassSchedule(String studentID);
+	public boolean dropCourse(String studentID,String courseID);
+	public boolean swapCourse(String studentID, String oldcourseID, String newcourseID);
+
+}
